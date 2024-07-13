@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+article h2 {
+  color: rgba(200, 0, 0, 0.8);
+}
+
+aside {
+  flex: 1;
+  text-align: center;
+}
+
+body {
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  max-width: 1920px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+footer {
+  background-color: rgba(200, 0, 0, 0.8);
+  color: whitesmoke;
+  padding: 5px;
+  text-align: center;
+}
+
+header {
+  align-items: center;
+  background-color: rgba(200, 0, 0, 0.8);
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+header img {
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: large;
+  gap: 5rem;
+  padding: 20px;
+  text-align: justify;
+}
+
+nav ul {
+  display: flex;
+  gap: 5rem;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a:not(:hover) {
+  color: whitesmoke;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.bikes {
+  margin-bottom: 50px;
+}
+
+.jumbotron {
+  display: flex;
+  background-image: url(../images/mvagusta_red.jpg);
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.jumbotron p:not(:hover) {
+  color: whitesmoke;
+  font-size: 7rem;
+  font-weight: 700;
+  padding: 100px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.jumbotron p:hover {
+  color: rgba(200, 0, 0, 1);
+  cursor: pointer;
+  font-size: 8rem;
+  font-weight: 700;
+  padding: 100px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+#bikes img {
+  max-width: 1000px;
+}
+
+#bikes table tr td:nth-child(1) {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+#bikes table:last-child tr {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+#content {
+  display: flex;
+  flex: 3;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+#detail img:not(:hover) {
+  max-width: 250px;
+  transition: all 0.2s;
+}
+
+#detail img:hover {
+  margin-left: 50px;
+  max-width: 250px;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+header img {
+  max-width: 50px;
+}
+
+#detail table tr td:nth-child(1) {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  header nav ul li a:not(:hover) {
+    font-size: 2.5rem !important;
+  }
+
+  header nav ul li a:hover {
+    font-size: 3rem !important;
+  }
+
+  main {
+    font-size: 1.75rem;
+  }
+
+  .jumbotron p:not(:hover) {
+    font-size: 6rem;
+  }
+
+  .jumbotron p:hover {
+    font-size: 7rem;
+  }
+
+  #bikes table:last-child tr {
+    font-size: 2.25rem;
+  }
+
+  #detail img:not(:hover) {
+    max-width: 350px;
+  }
+
+  #detail img:hover {
+    margin-left: 50px;
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 1.75rem;
+  }
+
+  header h1 {
+    font-size: 3.75rem;
+  }
+
+  header nav ul li a:not(:hover) {
+    font-size: 2.75rem !important;
+  }
+
+  header nav ul li a:hover {
+    font-size: 3.25rem !important;
+  }
+
+  main {
+    font-size: 2.25rem;
+  }
+
+  .jumbotron p:not(:hover) {
+    font-size: 5.5rem;
+  }
+
+  .jumbotron p:hover {
+    font-size: 6rem;
+  }
+
+  #bikes table:last-child tr {
+    font-size: 2.75rem;
+  }
+
+  #detail img:not(:hover) {
+    max-width: 500px;
+  }
+
+  #detail img:hover {
+    margin-left: 50px;
+    max-width: 500px;
+  }
+}
